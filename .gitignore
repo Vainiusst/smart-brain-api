@@ -115,5 +115,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+
 # API key file
-.controllers/apiKey.js
+controllers/apiKey.js
