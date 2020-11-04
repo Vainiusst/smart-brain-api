@@ -1,7 +1,6 @@
 const clarifai = require('clarifai');
-const apiKey = require('./ApiKey.js');
 
-const clariApp = new Clarifai.App(apiKey);
+const clariApp = new Clarifai.App({apiKey: "placeholderKey"});
 
 const handleApiCall = (req, res) => {
 	clariApp.models
