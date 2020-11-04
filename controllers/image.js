@@ -1,5 +1,5 @@
 const clarifai = require('clarifai');
-const apiKey = require('./apiKey.js');
+const apiKey = require('./ApiKey.js');
 
 const clariApp = new Clarifai.App(apiKey);
 
