@@ -28,7 +28,7 @@ const db = knex({
   }
 });
 
-// read the envionmental variables to look for port
+// read the envionmental variables to look for port. Don't forget to set it first.
 const PORT = process.env.PORT;
 
 // server services
@@ -44,4 +44,4 @@ app.put('/image', (req, res) => { image.handleImage(req, res, db) });
 
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) });
 
-app.listen(PORT, () => console.log(`Server is working on port ${PORT}`));
+app.listen(PORT || 3000, () => console.log(`Server is working on port ${PORT}`));
